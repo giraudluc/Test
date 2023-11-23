@@ -27,13 +27,29 @@ Some of these words <ins>will be underlined</ins>.
 
 <font color="red">This text is red!</font>
 
-## Note
+## Blockquotes
 
-> [!NOTE]
-> Highlights information that users should take into account, even when skimming.
+> Blockquotes are very handy in email to emulate reply text.
+> This line is part of the same quote.
 
-> [!IMPORTANT]
-> Crucial information necessary for users to succeed.
+## Inline HTML
 
-> [!WARNING]
-> Critical content demanding immediate user attention due to potential risks.
+<dl>
+  <dt>Definition list</dt>
+  <dd>Is something people use sometimes.</dd>
+
+  <dt>Markdown in HTML</dt>
+  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
+</dl>
+
+## Emoji
+
+Gone camping! :tent: Be back soon.
+
+## Admonitions
+
+> :warning: **Warning:** Do not push the big red button.
+
+> :memo: **Note:** Sunrises are beautiful.
+
+> :bulb: **Tip:** Remember to appreciate the little things in life.
