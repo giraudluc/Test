@@ -1,5 +1,5 @@
 ---
-modified: 2023-11-22T06:59:04.181Z
+modified: 2023-11-23T14:26:32.950Z
 title: <img src="./assets/images/Valeo.png" width="50">  Mkdocs
 ---
 
@@ -9,7 +9,8 @@ title: <img src="./assets/images/Valeo.png" width="50">  Mkdocs
 
 ## Table Of Contents
 
-1. [Code block](codeblock.md)
-2. [Miscellaneous](miscellaneous.md)
+1. [Miscellaneous](miscellaneous.md)
+2. [Code block](codeblock.md)
 3. [Google font](googlefont.md)
 4. [Html page](htmlpage.md)
+5. [Html page](mermaid.md)
