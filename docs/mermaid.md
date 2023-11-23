@@ -3,7 +3,7 @@ modified: 2023-11-23T14:25:50.219Z
 title: Mermaid
 ---
 
-# Mermaid
+# Mermaid diagrams
 
 ## Diagram
 
