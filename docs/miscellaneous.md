@@ -34,22 +34,4 @@ Some of these words <ins>will be underlined</ins>.
 
 ## Inline HTML
 
-<dl>
-  <dt>Definition list</dt>
-  <dd>Is something people use sometimes.</dd>
-
-  <dt>Markdown in HTML</dt>
-  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
-</dl>
-
-## Emoji
-
-Gone camping! :tent: Be back soon.
-
-## Admonitions
-
-> :warning: **Warning:** Do not push the big red button.
-
-> :memo: **Note:** Sunrises are beautiful.
-
-> :bulb: **Tip:** Remember to appreciate the little things in life.
+<h1> H1 tag used </h1>
