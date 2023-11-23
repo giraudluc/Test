@@ -4,4 +4,6 @@
 
 Simple test
 
-![Drawio](SoftwareValidationTeamOrganization.drawio)
+![Drawio](./SoftwareValidationTeamOrganization.xml)
+
+./SoftwareValidationTeamOrganization.xml
