@@ -3,3 +3,5 @@
 ## Description
 
 Simple test
+
+![Drawio](SoftwareValidationTeamOrganization.drawio)
