@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Tutorial - TelemetryPlot</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="assets/_mkdocstrings.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Tutorial";
+        var mkdocs_page_input_path = "tutorial.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/python.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="index.html" class="icon icon-home"> TelemetryPlot
+        </a>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="index.html">Home</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="tutorial.html">Tutorial</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="reference.html">Reference</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="about.html">About</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">TelemetryPlot</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html" class="icon icon-home" alt="Docs"></a> &raquo;</li>
+      <li>Tutorial</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="tutorial">Tutorial</h1>
+<h2 id="youll-learn-how-to-get-started-using-the-telemetryplot-python-module">You'll learn how to get started using the <strong><em>TelemetryPlot</em></strong> Python module</h2>
+<p>The <strong><em>TelemetryPlot.py</em></strong> Python module provides a set of services to plot telemetry data.<br />
+Telemetry data are sent over UDP Packets in a format compatible with the <strong><em>Teleplot</em></strong> for <strong><em>VSCode</em></strong> extension.</p>
+<p><img src="./assets/images/TelemetryPlotOverview.png" width="600"></p>
+<h2 id="build-of-material">Build of material</h2>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TelemetryPlot.py</td>
+<td>Set of services to plot telemetry</td>
+</tr>
+</tbody>
+</table>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li>Python V3.9+ (<em>Software Validation</em> Python distribution)</li>
+<li>socket Python package</li>
+</ul>
+<p><img src="./assets/images/info.png" width="15"> The Windows Software Validation (standard) Python distribution already satisfy those dependencies.</p>
+<ul>
+<li><img src="./assets/images/vscode.png" width="20"> VSCode editor</li>
+<li>Teleplot for VSCode extension</li>
+</ul>
+<h2 id="python-module-installation">Python module installation</h2>
+<p>The module is packaged in the <strong><em>TelemetryPlot.zip</em></strong> archive.<br />
+The module can be installed by copy (unzip) in your working directory.</p>
+<h2 id="teleplot-for-vscode-extension-installation">Teleplot for VSCode extension installation</h2>
+<p>The <strong><em>Teleplot</em></strong> VSCode extension can be installed via the extension manager.</p>
+<p><img src="./assets/images/VSCodeTeleplotExtensionInstallation.png" width="600"></p>
+<h2 id="teleplot-for-vscode-extension-activation">Teleplot for VSCode extension activation</h2>
+<p>To activate the extension, click on the VSCode <strong><em>Teleplot icon</em></strong>.</p>
+<p><img src="./assets/images/TeleplotForVSCodeExtensionActivation.png" width="600"></p>
+<h2 id="importing-the-module">Importing the module</h2>
+<p>First copy the module in your Python script working directory.</p>
+<pre><code class="language-python">import sys
+sys.path.append(&quot;.&quot;)
+from TelemetryPlot import *
+</code></pre>
+<h2 id="services-usage">Services usage</h2>
+<p>Three plot functions are provided by the module.</p>
+<ul>
+<li>
+<p><strong><em>sendTelemetryText(chanelName: str, text: str)</em></strong>
+Send the given text message to the given Telemetry chanel name.</p>
+</li>
+<li>
+<p><strong><em>sendTelemetryTimeStampedValue(chanelName: str, value: Union[int, float])</em></strong>
+Send the given value to the given Telemetry chanel name.</p>
+</li>
+<li>
+<p><strong><em>sendTelemetryXY(chanelName: str, xArray: List[Union[int, float]], yArray: List[Union[int, float]])</em></strong>
+Send the given x and y values to the given Telemetry chanel name.</p>
+</li>
+</ul>
+<p>Before calling any off those functions, the <strong><em>initializeTelemetry()</em></strong> function must be called once.</p>
+<pre><code class="language-python"># Example of Trace32 VT
+VT_INPUTS = list(range(1023))      # adc values
+VT_OUTPUTS = [0] * len(VT_INPUTS)  # Level values
+# Loop
+for i in range(len(VT_INPUTS)):
+  myT32.writeSingleVariable(&quot;STUB_u16AdcSample&quot;, VT_INPUTS[i])
+  time.sleep(0.1)
+  VT_OUTPUTS[i] = myT32.readSingleVariable(&quot;DBA_strStates.au8BatteryLevel[0]&quot;)
+# TelemetryXY
+initializeTelemetry()
+sendTelemetryXY(&quot;levelUp&quot;, VT_INPUTS, VT_OUTPUTS)
+</code></pre>
+<p>VSCode Teleplot display result:</p>
+<p><img src="./assets/images/sendTelemetryXYExamples.png" width="600"></p>
+<h2 id="code-documentation">Code documentation</h2>
+<p>&#9755; Refer to the <strong><em>reference chapter</em></strong> for the detailed technical module documentation.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="index.html" class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="reference.html" class="btn btn-neutral float-right" title="Reference">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>(&copy;) Valeo</p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="index.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="reference.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme_extra.js" defer></script>
+    <script src="js/theme.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
