@@ -40,8 +40,3 @@ Some of these words <ins>will be underlined</ins>.
 ## Inline HTML
 
 <h1> H1 tag used </h1>
-
-<iframe 
-width="400" height="300"
-src="https://diagrams.apps.valeo.com//?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1#G1W4btZeYIV9gzxSU5QTIuL1eT4XTgEXVo">
-</iframe>

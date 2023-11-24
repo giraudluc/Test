@@ -2,6 +2,6 @@
 
 ## Description
 
-https://github.com/giraudluc
+> https://github.com/giraudluc
 
 Simple test lgi
