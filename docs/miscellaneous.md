@@ -1,3 +1,8 @@
+---
+modified: 2023-11-24T12:03:50.366Z
+title: Miscellaneous Markdown examples
+---
+
 # Miscellaneous Markdown examples
 
 ## Todo
@@ -35,3 +40,7 @@ Some of these words <ins>will be underlined</ins>.
 ## Inline HTML
 
 <h1> H1 tag used </h1>
+
+##  Drawio
+
+<iframe frameborder="0" style="width:100%;height:400px;" src="https://drive.google.com/file/d/1W4btZeYIV9gzxSU5QTIuL1eT4XTgEXVo/view?usp=drive_link"></iframe>
