@@ -1,8 +1,3 @@
----
-modified: 2023-11-23T14:26:32.950Z
-title: <img src="./assets/images/Valeo.png" width="50">  Mkdocs
----
-
 # <img src="./assets/images/Valeo.png" width="50">  Mkdocs
 
 ***Markdown*** to ***html*** with **Mkdocs** examples.
