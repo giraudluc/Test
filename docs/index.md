@@ -1,3 +1,8 @@
+---
+modified: 2023-11-24T15:26:22.984Z
+title: <img src="./assets/images/Valeo.png" width="50">  Mkdocs
+---
+
 # <img src="./assets/images/Valeo.png" width="50">  Mkdocs
 
 ***Markdown*** to ***html*** with **Mkdocs** examples.
@@ -11,3 +16,4 @@
 5. [Mermaid](mermaid.md)
 6. [Google Drive](googledrive.md)
 7. [Drawio](drawio.md)
+8. [ReadTheDoc](./site/index.html)
