@@ -1,7 +1,5 @@
-# Test project
+# Markdown and ReadTheDoc
 
 ## Description
 
-> https://github.com/giraudluc
-
-Simple test lgi
+Test of Markdown and ReadTheDoc GitHub support.

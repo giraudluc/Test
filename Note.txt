@@ -2,3 +2,4 @@ cd /d D:\04_SOFTWARE_PROJECTS\261-VSCODE-Python-GitHub\Test
 
 "C:\Program Files\draw.io\draw.io.exe" -x -f png -o .\docs\assets\images\sequence.png .\docs\assets\drawio\sequence.drawio
 
+https://github.com/giraudluc
