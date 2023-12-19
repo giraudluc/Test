@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1000">
+    <base target="_top">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.5.5/css/uikit.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.5.5/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.5.5/js/uikit-icons.min.js"></script>
+  
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+
+    <title>Map</title>
+
+    <style>
+
+    #map {
+      width: 800px; 
+      height: 600px; 
+    }
+
+    </style>
+
+    <script>
+      
+      $(document ).ready(function() {
+      
+        $("#testButton").click(function() {
+          $("#console").html("ok");
+
+        });
+
+        var point1 = [43.06580,5.86681]
+        var point2 = [43.05290,5.84552]
+
+        var map = L.map('map').setView([43.0628, 5.8619], 16);
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+        L.circle(point1, {radius: 100}).addTo(map);
+        var marker1 = L.marker(point1).addTo(map);
+        marker1.on('click', function(e) {$("#console").html("marker1");});
+        //marker1.bindTooltip("my tooltip text").openTooltip();
+        marker1.bindPopup('This is Denver, CO.');
+
+});
+
+    </script>
+  
+  </head>
+  <body class="uk-container">
+
+  <h1> Test </h1>
+
+  <hr>
+  <div class="uk-container">
+  <button id="testButton" class="uk-button uk-button-default">Test</button>
+  <div id="console"> ... </div>
+  </div>
+  <hr>
+
+  <div id="map"></div>
+
+
+  </body>
+
+</html>
+
